@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  cassandra:
+    container_name: cassandra_cluster
+    image: cassandra:4.1.0
+
+    environment:
+      - CASSANDRA_CLUSTER_NAME=music-db
+      - CASSANDRA_DC=sparkify-main
+      - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+      - LISTEN_ADDRESS=172.0.0.1
+      - MAX_HEAP_SIZE=500M
+      - HEAP_NEWSIZE=100M
+
+    ports:
+      - 7000:7000
+
+    volumes:
+      - ./data/cassandra:/var/lib/cassandra
+
+  
+
+  jupyter:
+    container_name: jupyter_notebook
+    image: jupyter/datascience-notebook:x86_64-ubuntu-22.04
+
+    volumes:
+        - ./:/home/jovyan/work
+        - ./datasets:/home/jovyan/work/datasets
+
+    ports:
+        - 8888:8888
