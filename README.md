@@ -23,7 +23,7 @@ event_data/2018-11-09-events.csv`
 1. Implement the logic in section Part I of the notebook to iterate through each event file in event_data to process and create a new CSV file in Python
 2. Part II of the notebook to include Apache Cassandra CREATE and INSERT statements to load processed records into relevant tables in my data model
 
-### Step 2: Modeling your NoSQL database or Apache Cassandra database
+### Step 2: Modeling NoSQL database or Apache Cassandra database
 1. Design tables to answer the queries outlined in the project
 2. Write Apache Cassandra CREATE KEYSPACE and SET KEYSPACE statements
 3. Develop CREATE statement for each of the tables to address each question
