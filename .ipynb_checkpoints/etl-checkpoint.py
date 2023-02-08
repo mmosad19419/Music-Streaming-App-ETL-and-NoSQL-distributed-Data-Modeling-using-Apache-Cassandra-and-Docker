@@ -189,14 +189,10 @@ print("Data loaded to database Successfully")
 
         
 ## Drop the table before closing out the sessions
-session.execute("DROP TABLE IF EXISTS songs_library")
-session.execute("DROP TABLE IF EXISTS song_playlist_session")
-session.execute("DROP TABLE IF EXISTS users_session")
-
-print("Tables Droped Successfully")
+session.execute("DROP TABLE IF EXISTS songs")
+session.execute("DROP TABLE IF EXISTS user")
+session.execute("DROP TABLE IF EXISTS music_library")
 
 ## Close session and cluster connection
 session.shutdown()
 cluster.shutdown()
-
-print("Session Closed Successfully")
