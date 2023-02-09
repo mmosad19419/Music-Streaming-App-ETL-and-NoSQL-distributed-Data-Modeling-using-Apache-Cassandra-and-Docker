@@ -1,4 +1,4 @@
-# Nosql-Data-Modeling-With-Apache-Cassandra-using-Docker
+#  Music Streaming App ETL and NoSQL Analytical Data Modeling using Apache Cassandra With Docker
 
 ## Modeling with Cassandra
 In this project, I'll apply what you've learned on data modeling with Apache Cassandra and complete an ETL pipeline using Python.
