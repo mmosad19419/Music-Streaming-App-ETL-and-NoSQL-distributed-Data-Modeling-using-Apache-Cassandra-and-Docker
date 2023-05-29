@@ -70,7 +70,7 @@ try:
 except Exception as e:
     print(e) 
 
-print("Tables Craeted Successfully")
+print("Tables Created Successfully")
 
 
 
